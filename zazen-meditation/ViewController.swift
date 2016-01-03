@@ -10,16 +10,34 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var leadinTime: Int!
+    var zazen1Time: Int!
+    var kinhinTime: Int!
+    var zazen2Time: Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+//        let userDefaults = NSUserDefaults.standardUserDefaults()
+//        if (userDefaults.objectForKey(EXERCISE_KEY) == nil) {
+//            self.seedExercises()
+//        } else {
+//            self.loadPosts()
+//        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    
+    @IBAction func aboutBtnPressed(sender: AnyObject) {
+        performSegueWithIdentifier("AboutSegue", sender: self)
     }
-
+    
+    func addPageLetterSpacing(labels: [UILabel!]) {
+        
+        for label in labels {
+            label.attributedText = NSAttributedString(string: label.text!.uppercaseString, attributes: [NSKernAttributeName: 5])
+        }
+        
+    }
 
 }
-

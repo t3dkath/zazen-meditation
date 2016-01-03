@@ -7,17 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB0324A71C38815500D760E5 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0324A61C38815500D760E5 /* SettingsVC.swift */; };
+		FB0324A91C38817600D760E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0324A81C38817600D760E5 /* ViewController.swift */; };
+		FB0324AB1C3888C400D760E5 /* ZazenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0324AA1C3888C400D760E5 /* ZazenVC.swift */; };
+		FB0324AD1C3927FC00D760E5 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0324AC1C3927FC00D760E5 /* AboutVC.swift */; };
+		FB0324AF1C3935F500D760E5 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0324AE1C3935F500D760E5 /* MainButton.swift */; };
 		FBF87FC61C38286100632D9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF87FC51C38286100632D9E /* AppDelegate.swift */; };
-		FBF87FC81C38286100632D9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF87FC71C38286100632D9E /* ViewController.swift */; };
+		FBF87FC81C38286100632D9E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF87FC71C38286100632D9E /* HomeVC.swift */; };
 		FBF87FCB1C38286100632D9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF87FC91C38286100632D9E /* Main.storyboard */; };
 		FBF87FCD1C38286100632D9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF87FCC1C38286100632D9E /* Assets.xcassets */; };
 		FBF87FD01C38286100632D9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF87FCE1C38286100632D9E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB0324A61C38815500D760E5 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		FB0324A81C38817600D760E5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB0324AA1C3888C400D760E5 /* ZazenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZazenVC.swift; sourceTree = "<group>"; };
+		FB0324AC1C3927FC00D760E5 /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		FB0324AE1C3935F500D760E5 /* MainButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		FBF87FC21C38286100632D9E /* zazen-meditation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "zazen-meditation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF87FC51C38286100632D9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FBF87FC71C38286100632D9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBF87FC71C38286100632D9E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		FBF87FCA1C38286100632D9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBF87FCC1C38286100632D9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBF87FCF1C38286100632D9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +45,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB0324A41C38597100D760E5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FBF87FC71C38286100632D9E /* HomeVC.swift */,
+				FB0324AC1C3927FC00D760E5 /* AboutVC.swift */,
+				FB0324A61C38815500D760E5 /* SettingsVC.swift */,
+				FB0324AA1C3888C400D760E5 /* ZazenVC.swift */,
+				FB0324A81C38817600D760E5 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FB0324A51C38597A00D760E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FBF87FC91C38286100632D9E /* Main.storyboard */,
+				FBF87FCE1C38286100632D9E /* LaunchScreen.storyboard */,
+				FB0324AE1C3935F500D760E5 /* MainButton.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		FBF87FB91C38286100632D9E = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +86,10 @@
 		FBF87FC41C38286100632D9E /* zazen-meditation */ = {
 			isa = PBXGroup;
 			children = (
+				FB0324A51C38597A00D760E5 /* Views */,
+				FB0324A41C38597100D760E5 /* Controllers */,
 				FBF87FC51C38286100632D9E /* AppDelegate.swift */,
-				FBF87FC71C38286100632D9E /* ViewController.swift */,
-				FBF87FC91C38286100632D9E /* Main.storyboard */,
 				FBF87FCC1C38286100632D9E /* Assets.xcassets */,
-				FBF87FCE1C38286100632D9E /* LaunchScreen.storyboard */,
 				FBF87FD11C38286100632D9E /* Info.plist */,
 			);
 			path = "zazen-meditation";
@@ -135,8 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBF87FC81C38286100632D9E /* ViewController.swift in Sources */,
+				FBF87FC81C38286100632D9E /* HomeVC.swift in Sources */,
 				FBF87FC61C38286100632D9E /* AppDelegate.swift in Sources */,
+				FB0324AF1C3935F500D760E5 /* MainButton.swift in Sources */,
+				FB0324AD1C3927FC00D760E5 /* AboutVC.swift in Sources */,
+				FB0324A91C38817600D760E5 /* ViewController.swift in Sources */,
+				FB0324A71C38815500D760E5 /* SettingsVC.swift in Sources */,
+				FB0324AB1C3888C400D760E5 /* ZazenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +287,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "zazen-meditation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.t3dhq.zazen-meditation";
+				PRODUCT_BUNDLE_IDENTIFIER = com.t3dhq.zazen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -262,7 +298,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "zazen-meditation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.t3dhq.zazen-meditation";
+				PRODUCT_BUNDLE_IDENTIFIER = com.t3dhq.zazen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -286,6 +322,7 @@
 				FBF87FD61C38286100632D9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
