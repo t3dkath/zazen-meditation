@@ -9,7 +9,6 @@
 import UIKit
 
 class HomeVC: ViewController {
-
     
     @IBOutlet weak var zbtnZazen1Lbl: UILabel!
     @IBOutlet weak var zbtnZazen1TimeLbl: UILabel!
@@ -28,20 +27,17 @@ class HomeVC: ViewController {
         
         let labels = [zbtnZazen1Lbl, zbtnZazen1TimeLbl, kbtnZazen2Lbl, kbtnZazen2TimeLbl, kbtnKinhinLbl, kbtnKinhinTimeLbl, kbtnZazen3Lbl, kbtnZazen3TimeLbl]
         
+        zbtnZazen1TimeLbl.text = Meditation.instance.zazen1Time.timeString
+        kbtnZazen2TimeLbl.text = Meditation.instance.zazen1Time.timeString
+        kbtnKinhinTimeLbl.text = Meditation.instance.kinhinTime.timeString
+        kbtnZazen3TimeLbl.text = Meditation.instance.zazen2Time.timeString
+        
         addPageLetterSpacing(labels)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func zazenSettings(sender: AnyObject) {
-        performSegueWithIdentifier("OptionsSegue", sender: self)
-    }
-    @IBAction func kinhinSettings(sender: AnyObject) {
-        performSegueWithIdentifier("OptionsSegue", sender: self)
-    }
-
 }
 

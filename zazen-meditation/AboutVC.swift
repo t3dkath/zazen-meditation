@@ -9,7 +9,7 @@
 import UIKit
 
 class AboutVC: ViewController {
-
+    
     @IBOutlet weak var linkBtn: UIButton!
     
     override func viewDidLoad() {

@@ -22,8 +22,22 @@ class SettingsVC: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(Meditation.instance.objectType)
+        
+        if Meditation.instance.objectType == objectType.ZAZEN.rawValue {
+            kinhinLbl.alpha = ALPHA_VALUE
+            kinhinTimeLbl.alpha = ALPHA_VALUE
+            zazen2Lbl.alpha = ALPHA_VALUE
+            zazen2TimeLbl.alpha = ALPHA_VALUE
+        }
 
         let labels = [leadinLbl, leadinTimeLbl, zazen1Lbl, zazen1TimeLbl, kinhinLbl, kinhinTimeLbl, zazen2Lbl, zazen2TimeLbl]
+        
+        leadinTimeLbl.text = Meditation.instance.leadInTime.timeString
+        zazen1TimeLbl.text = Meditation.instance.zazen1Time.timeString
+        kinhinTimeLbl.text = Meditation.instance.kinhinTime.timeString
+        zazen2TimeLbl.text = Meditation.instance.zazen2Time.timeString
         
         addPageLetterSpacing(labels)
     }

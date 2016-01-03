@@ -9,21 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    var leadinTime: Int!
-    var zazen1Time: Int!
-    var kinhinTime: Int!
-    var zazen2Time: Int!
+    
+    enum objectType:Int {
+        case ZAZEN = 0
+        case KINHIN = 1
+    }
+    
+    let ALPHA_VALUE: CGFloat = 0.15
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        let userDefaults = NSUserDefaults.standardUserDefaults()
-//        if (userDefaults.objectForKey(EXERCISE_KEY) == nil) {
-//            self.seedExercises()
-//        } else {
-//            self.loadPosts()
-//        }
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -33,6 +28,14 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func goToSettings(sender: UIButton) {
+        if sender.tag == objectType.ZAZEN.rawValue {
+            Meditation.instance.objectType = objectType.ZAZEN.rawValue
+        } else {
+            Meditation.instance.objectType = objectType.KINHIN.rawValue
+        }
+        performSegueWithIdentifier("OptionsSegue", sender: self)
+    }
     
     @IBAction func showAboutPage() {
         performSegueWithIdentifier("AboutSegue", sender: self)

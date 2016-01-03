@@ -48,7 +48,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="222.5" height="215.5"/>
                                                 <state key="normal" backgroundImage="circle-large-1"/>
                                                 <connections>
-                                                    <action selector="zazenSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VbJ-m5-mJ5"/>
+                                                    <action selector="goToSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xZx-h9-sZI"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -70,7 +70,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9Fd-J1-C33">
                                                 <rect key="frame" x="40" y="52" width="130" height="109"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pe7-hn-vOQ">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pe7-hn-vOQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="130" height="33"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZAZEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNP-91-b6e">
@@ -79,7 +79,7 @@
                                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="20 MINUTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aV-tu-PaP">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 MINUTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aV-tu-PaP">
                                                                 <rect key="frame" x="0.0" y="21" width="130" height="12"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="9"/>
                                                                 <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -87,7 +87,7 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OVV-bz-rma">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OVV-bz-rma">
                                                         <rect key="frame" x="0.0" y="38" width="130" height="33"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KINHIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9q-HJ-bvC">
@@ -96,7 +96,7 @@
                                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="10 MINUTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oG-tB-wOM">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 MINUTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oG-tB-wOM">
                                                                 <rect key="frame" x="0.0" y="21" width="130" height="12"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="9"/>
                                                                 <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -104,7 +104,7 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="txs-GB-rHg">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="txs-GB-rHg">
                                                         <rect key="frame" x="0.0" y="76" width="130" height="33"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZAZEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMA-h0-miS">
@@ -113,7 +113,7 @@
                                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="30 MINUTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGV-Ag-Rza">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 MINUTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGV-Ag-Rza">
                                                                 <rect key="frame" x="0.0" y="21" width="130" height="12"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="9"/>
                                                                 <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -123,14 +123,14 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Dm-Cl-raZ">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Dm-Cl-raZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="223" height="215.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="3Dm-Cl-raZ" secondAttribute="height" multiplier="125:121" id="vvp-fS-eeA"/>
                                                 </constraints>
                                                 <state key="normal" backgroundImage="circle-large-2"/>
                                                 <connections>
-                                                    <action selector="kinhinSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K0C-oJ-X3I"/>
+                                                    <action selector="goToSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YQf-fs-HCt"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -629,6 +629,6 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
         <image name="logo" width="233" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xL5-18-kLc"/>
+        <segue reference="sbE-1U-96R"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -9,7 +9,6 @@
 import UIKit
 
 class ZazenVC: ViewController {
-
     
     @IBOutlet weak var activityLbl: UILabel!
     @IBOutlet weak var timerLbl: UILabel!
