@@ -546,7 +546,7 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Afu-fE-eW9">
-                                <rect key="frame" x="240" y="242" width="120" height="35"/>
+                                <rect key="frame" x="240" y="183" width="120" height="35"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEAD IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vzp-BK-KoE">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="23"/>
@@ -572,6 +572,21 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                                     <constraint firstAttribute="width" constant="313" id="Nvq-BD-W4r"/>
                                 </constraints>
                             </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avv-SY-EZ4" customClass="MainButton" customModule="zazen_meditation" customModuleProvider="target">
+                                <rect key="frame" x="202" y="177" width="196" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="8qG-Q6-YtO"/>
+                                    <constraint firstAttribute="width" constant="196" id="VoR-Wr-gvu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <state key="normal" title="CLOSE ZENDO">
+                                    <color key="titleColor" red="0.0078431372550000003" green="0.0078431372550000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBeginPressed:" destination="3Qt-AU-i2K" eventType="touchUpInside" id="hF4-AV-NdT"/>
+                                    <action selector="onCloseZendoPressed:" destination="EWH-cT-nlm" eventType="touchUpInside" id="OCQ-uh-mB2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -579,18 +594,21 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                             <constraint firstItem="Afu-fE-eW9" firstAttribute="centerX" secondItem="sKN-Xr-a11" secondAttribute="centerX" id="A39-S8-8IY"/>
                             <constraint firstItem="y9F-hm-0f8" firstAttribute="leading" secondItem="sKN-Xr-a11" secondAttribute="leading" id="GpZ-Xd-7ri"/>
                             <constraint firstItem="TeL-Cu-tVB" firstAttribute="top" secondItem="fj4-iW-HES" secondAttribute="bottom" constant="30" id="JeN-ba-3a3"/>
-                            <constraint firstItem="Afu-fE-eW9" firstAttribute="centerY" secondItem="sKN-Xr-a11" secondAttribute="centerY" constant="-40" id="LL8-Lq-IiY"/>
+                            <constraint firstItem="Afu-fE-eW9" firstAttribute="centerY" secondItem="sKN-Xr-a11" secondAttribute="centerY" constant="-100" id="LL8-Lq-IiY"/>
                             <constraint firstItem="p5w-LZ-7yg" firstAttribute="top" secondItem="HdW-Fx-m7E" secondAttribute="bottom" constant="20" id="MD9-JK-X7y"/>
+                            <constraint firstItem="avv-SY-EZ4" firstAttribute="centerY" secondItem="sKN-Xr-a11" secondAttribute="centerY" constant="-100" id="UWj-LP-feQ"/>
                             <constraint firstItem="xeI-JO-zix" firstAttribute="centerX" secondItem="sKN-Xr-a11" secondAttribute="centerX" id="VRK-Jb-Gqs"/>
                             <constraint firstItem="p5w-LZ-7yg" firstAttribute="top" secondItem="y9F-hm-0f8" secondAttribute="bottom" id="WOY-w7-fMW"/>
                             <constraint firstAttribute="trailing" secondItem="y9F-hm-0f8" secondAttribute="trailing" id="aGB-Fl-lQK"/>
                             <constraint firstItem="TeL-Cu-tVB" firstAttribute="centerX" secondItem="sKN-Xr-a11" secondAttribute="centerX" id="aPI-dY-6N5"/>
                             <constraint firstItem="y9F-hm-0f8" firstAttribute="top" secondItem="sKN-Xr-a11" secondAttribute="top" id="lI7-CD-bNw"/>
                             <constraint firstAttribute="trailing" secondItem="HdW-Fx-m7E" secondAttribute="trailing" constant="20" id="mid-ee-mBv"/>
+                            <constraint firstItem="avv-SY-EZ4" firstAttribute="centerX" secondItem="sKN-Xr-a11" secondAttribute="centerX" id="r86-Di-EdU"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="activityLbl" destination="Vzp-BK-KoE" id="ja0-Uc-wrJ"/>
+                        <outlet property="closeZendo" destination="avv-SY-EZ4" id="ZUr-6h-2oS"/>
                         <outlet property="timerLbl" destination="Mzt-ba-FPM" id="bmF-Cf-IyR"/>
                         <segue destination="03I-Xs-8Mb" kind="presentation" identifier="AboutSegue" modalTransitionStyle="flipHorizontal" id="xL5-18-kLc"/>
                     </connections>
@@ -629,6 +647,6 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
         <image name="logo" width="233" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sbE-1U-96R"/>
+        <segue reference="xL5-18-kLc"/>
     </inferredMetricsTieBreakers>
 </document>

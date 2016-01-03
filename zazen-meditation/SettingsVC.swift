@@ -23,8 +23,6 @@ class SettingsVC: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(Meditation.instance.objectType)
-        
         if Meditation.instance.objectType == objectType.ZAZEN.rawValue {
             kinhinLbl.alpha = ALPHA_VALUE
             kinhinTimeLbl.alpha = ALPHA_VALUE

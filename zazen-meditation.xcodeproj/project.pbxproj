@@ -15,6 +15,7 @@
 		FB0324B11C39492D00D760E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB0324B01C39492D00D760E5 /* Assets.xcassets */; };
 		FB0324B41C39556000D760E5 /* Meditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0324B31C39556000D760E5 /* Meditation.swift */; };
 		FB0324B61C3958FC00D760E5 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0324B51C3958FC00D760E5 /* Int.swift */; };
+		FB0324B81C39A1E500D760E5 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB0324B71C39A1E500D760E5 /* btn.wav */; };
 		FBF87FC61C38286100632D9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF87FC51C38286100632D9E /* AppDelegate.swift */; };
 		FBF87FC81C38286100632D9E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF87FC71C38286100632D9E /* HomeVC.swift */; };
 		FBF87FCB1C38286100632D9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF87FC91C38286100632D9E /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		FB0324B01C39492D00D760E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB0324B31C39556000D760E5 /* Meditation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meditation.swift; sourceTree = "<group>"; };
 		FB0324B51C3958FC00D760E5 /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		FB0324B71C39A1E500D760E5 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = btn.wav; path = ../btn.wav; sourceTree = "<group>"; };
 		FBF87FC21C38286100632D9E /* zazen-meditation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "zazen-meditation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF87FC51C38286100632D9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBF87FC71C38286100632D9E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		FB0324B91C39A1EC00D760E5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FB0324B71C39A1E500D760E5 /* btn.wav */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		FBF87FB91C38286100632D9E = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 		FBF87FC41C38286100632D9E /* zazen-meditation */ = {
 			isa = PBXGroup;
 			children = (
+				FB0324B91C39A1EC00D760E5 /* Assets */,
 				FB0324B21C39554E00D760E5 /* Models */,
 				FB0324A51C38597A00D760E5 /* Views */,
 				FB0324A41C38597100D760E5 /* Controllers */,
@@ -170,6 +181,7 @@
 				FBF87FD01C38286100632D9E /* LaunchScreen.storyboard in Resources */,
 				FB0324B11C39492D00D760E5 /* Assets.xcassets in Resources */,
 				FBF87FCB1C38286100632D9E /* Main.storyboard in Resources */,
+				FB0324B81C39A1E500D760E5 /* btn.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,4 +20,12 @@ extension Int {
         return "\(self) \(minString)"
     }
     
+    var inSeconds: Int {
+        return self * 59
+    }
+    
+    var inMinutes: String {
+        return ((self / 60) + 1).timeString
+    }
+    
 }

@@ -26,7 +26,7 @@ class Meditation {
     init() {
         if (userDefaults.objectForKey(TIME_KEY) == nil) {
             leadInTime = 1
-            zazen1Time = 1
+            zazen1Time = 20
             kinhinTime = 10
             zazen2Time = 30
             
