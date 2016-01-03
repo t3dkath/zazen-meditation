@@ -13,7 +13,7 @@ class ZazenVC: ViewController {
     
     var finished = false
     var count: Int!
-    var currentObject: String = "Lead In"
+    var currentObject: String = "Preparation"
     var meditateTimer: NSTimer?
     var timerSeconds: Int!
     
@@ -50,7 +50,7 @@ class ZazenVC: ViewController {
     
     func onTimerEnd() {
         switch(currentObject) {
-        case "Lead In":
+        case "Preparation":
             //play 3 bells
             bellSound.play()
             
@@ -91,7 +91,6 @@ class ZazenVC: ViewController {
         closeZendo.hidden = false
         
         meditateTimer?.invalidate()
-        print("Finish")
     }
     
     func timerTick() {
