@@ -26,18 +26,33 @@ class ViewController: UIViewController {
 //        }
     }
     
+    override func viewDidAppear(animated: Bool) {
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
+        self.view.addGestureRecognizer(swipeRight)
+    }
     
     
-    @IBAction func aboutBtnPressed(sender: AnyObject) {
+    
+    @IBAction func showAboutPage() {
         performSegueWithIdentifier("AboutSegue", sender: self)
     }
     
     func addPageLetterSpacing(labels: [UILabel!]) {
-        
         for label in labels {
             label.attributedText = NSAttributedString(string: label.text!.uppercaseString, attributes: [NSKernAttributeName: 5])
         }
         
+    }
+    
+    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            switch swipeGesture.direction {
+            case UISwipeGestureRecognizerDirection.Right:
+                self.navigationController?.popViewControllerAnimated(true)
+            default: break
+            }
+        }
     }
 
 }

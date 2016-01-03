@@ -35,15 +35,13 @@ class HomeVC: ViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     @IBAction func zazenSettings(sender: AnyObject) {
         performSegueWithIdentifier("OptionsSegue", sender: self)
     }
     @IBAction func kinhinSettings(sender: AnyObject) {
         performSegueWithIdentifier("OptionsSegue", sender: self)
     }
-    
-    
-
 
 }
 

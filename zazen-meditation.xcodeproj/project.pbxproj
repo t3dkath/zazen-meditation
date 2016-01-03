@@ -12,10 +12,10 @@
 		FB0324AB1C3888C400D760E5 /* ZazenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0324AA1C3888C400D760E5 /* ZazenVC.swift */; };
 		FB0324AD1C3927FC00D760E5 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0324AC1C3927FC00D760E5 /* AboutVC.swift */; };
 		FB0324AF1C3935F500D760E5 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0324AE1C3935F500D760E5 /* MainButton.swift */; };
+		FB0324B11C39492D00D760E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB0324B01C39492D00D760E5 /* Assets.xcassets */; };
 		FBF87FC61C38286100632D9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF87FC51C38286100632D9E /* AppDelegate.swift */; };
 		FBF87FC81C38286100632D9E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF87FC71C38286100632D9E /* HomeVC.swift */; };
 		FBF87FCB1C38286100632D9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF87FC91C38286100632D9E /* Main.storyboard */; };
-		FBF87FCD1C38286100632D9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF87FCC1C38286100632D9E /* Assets.xcassets */; };
 		FBF87FD01C38286100632D9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF87FCE1C38286100632D9E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -25,11 +25,11 @@
 		FB0324AA1C3888C400D760E5 /* ZazenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZazenVC.swift; sourceTree = "<group>"; };
 		FB0324AC1C3927FC00D760E5 /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		FB0324AE1C3935F500D760E5 /* MainButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		FB0324B01C39492D00D760E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBF87FC21C38286100632D9E /* zazen-meditation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "zazen-meditation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF87FC51C38286100632D9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBF87FC71C38286100632D9E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		FBF87FCA1C38286100632D9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FBF87FCC1C38286100632D9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBF87FCF1C38286100632D9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBF87FD11C38286100632D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,7 +89,7 @@
 				FB0324A51C38597A00D760E5 /* Views */,
 				FB0324A41C38597100D760E5 /* Controllers */,
 				FBF87FC51C38286100632D9E /* AppDelegate.swift */,
-				FBF87FCC1C38286100632D9E /* Assets.xcassets */,
+				FB0324B01C39492D00D760E5 /* Assets.xcassets */,
 				FBF87FD11C38286100632D9E /* Info.plist */,
 			);
 			path = "zazen-meditation";
@@ -154,7 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBF87FD01C38286100632D9E /* LaunchScreen.storyboard in Resources */,
-				FBF87FCD1C38286100632D9E /* Assets.xcassets in Resources */,
+				FB0324B11C39492D00D760E5 /* Assets.xcassets in Resources */,
 				FBF87FCB1C38286100632D9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +289,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.t3dhq.zazen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -300,6 +301,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.t3dhq.zazen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
