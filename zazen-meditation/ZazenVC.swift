@@ -34,6 +34,7 @@ class ZazenVC: ViewController {
     }
     
     @IBAction func onCloseZendoPressed(sender: AnyObject) {
+        bells1.stop()
         bells2.play()
         UIApplication.sharedApplication().idleTimerDisabled = false
         self.navigationController?.popToRootViewControllerAnimated(true)
