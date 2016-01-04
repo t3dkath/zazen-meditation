@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         case KINHIN = 1
     }
     
+    var meditateTimer: NSTimer?
     let ALPHA_VALUE: CGFloat = 0.15
     
     override func viewDidLoad() {
@@ -52,6 +53,8 @@ class ViewController: UIViewController {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.Right:
+                meditateTimer?.invalidate()
+                UIApplication.sharedApplication().idleTimerDisabled = false
                 self.navigationController?.popViewControllerAnimated(true)
             default: break
             }

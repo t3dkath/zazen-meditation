@@ -14,7 +14,6 @@ class ZazenVC: ViewController {
     var finished = false
     var count: Int!
     var currentObject: String = "Preparation"
-    var meditateTimer: NSTimer?
     var timerSeconds: Int!
     
     var bellURL: NSURL {
@@ -29,17 +28,18 @@ class ZazenVC: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setupBells()
-        
-        let labels = [activityLbl, timerLbl]
+        UIApplication.sharedApplication().idleTimerDisabled = true
         
         count = Meditation.instance.leadInTime.inSeconds
+        setupBells()
         playTimer()
         
+        let labels = [activityLbl, timerLbl]
         addPageLetterSpacing(labels)
     }
     
     @IBAction func onCloseZendoPressed(sender: AnyObject) {
+        UIApplication.sharedApplication().idleTimerDisabled = false
         self.navigationController?.popToRootViewControllerAnimated(true)
     }
     
