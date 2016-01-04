@@ -73,7 +73,8 @@ class ViewController: UIViewController {
     
     
     func setupBells() {
-        if Meditation.instance.bellType == 0 {
+        if Meditation.instance.bellType == 0
+        {
             bell1 = "1 Bell"
             bell2 = "2 Bells"
             bell3 = "3 Bells"

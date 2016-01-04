@@ -641,8 +641,8 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                                     <action selector="showAboutPage" destination="EWH-cT-nlm" eventType="touchUpInside" id="rMN-St-brk"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Afu-fE-eW9">
-                                <rect key="frame" x="200" y="183" width="200" height="35"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Afu-fE-eW9">
+                                <rect key="frame" x="200" y="184" width="200" height="35"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PREPARATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vzp-BK-KoE">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="23"/>
@@ -661,13 +661,6 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                                     <constraint firstAttribute="width" constant="200" id="ksm-Cv-nLl"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enzo-splash" translatesAutoresizingMaskIntoConstraints="NO" id="xeI-JO-zix">
-                                <rect key="frame" x="144" y="373" width="313" height="227"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="227" id="K90-ax-Ivm"/>
-                                    <constraint firstAttribute="width" constant="313" id="Nvq-BD-W4r"/>
-                                </constraints>
-                            </imageView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avv-SY-EZ4" customClass="MainButton" customModule="zazen_meditation" customModuleProvider="target">
                                 <rect key="frame" x="202" y="177" width="196" height="46"/>
                                 <constraints>
@@ -683,10 +676,17 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                                     <action selector="onCloseZendoPressed:" destination="EWH-cT-nlm" eventType="touchUpInside" id="OCQ-uh-mB2"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle-large-1" translatesAutoresizingMaskIntoConstraints="NO" id="xeI-JO-zix">
+                                <rect key="frame" x="169" y="315" width="263" height="255"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="255" id="S88-kO-FxV"/>
+                                    <constraint firstAttribute="width" constant="263" id="cZN-ii-ndT"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="p5w-LZ-7yg" firstAttribute="top" secondItem="xeI-JO-zix" secondAttribute="bottom" id="7Cm-fx-Y97"/>
+                            <constraint firstItem="p5w-LZ-7yg" firstAttribute="top" secondItem="xeI-JO-zix" secondAttribute="bottom" constant="30" id="7Cm-fx-Y97"/>
                             <constraint firstItem="Afu-fE-eW9" firstAttribute="centerX" secondItem="sKN-Xr-a11" secondAttribute="centerX" id="A39-S8-8IY"/>
                             <constraint firstItem="y9F-hm-0f8" firstAttribute="leading" secondItem="sKN-Xr-a11" secondAttribute="leading" id="GpZ-Xd-7ri"/>
                             <constraint firstItem="TeL-Cu-tVB" firstAttribute="top" secondItem="fj4-iW-HES" secondAttribute="bottom" constant="30" id="JeN-ba-3a3"/>
@@ -739,12 +739,11 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
         <image name="circle-large-1" width="250" height="242"/>
         <image name="circle-large-2" width="253" height="254"/>
         <image name="close" width="25" height="25"/>
-        <image name="enzo-splash" width="313" height="227"/>
         <image name="info" width="25" height="25"/>
         <image name="logo" width="233" height="29"/>
         <image name="stick" width="63" height="8"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="B71-UE-PIM"/>
+        <segue reference="xL5-18-kLc"/>
     </inferredMetricsTieBreakers>
 </document>

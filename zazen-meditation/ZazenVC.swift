@@ -76,7 +76,7 @@ class ZazenVC: ViewController {
     }
     
     func finishMeditation() {
-        bells3.play()
+        bells1.play()
         activityLbl.hidden = true
         timerLbl.hidden = true
         closeZendo.hidden = false

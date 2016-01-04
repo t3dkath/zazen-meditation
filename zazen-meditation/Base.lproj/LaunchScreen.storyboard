@@ -20,13 +20,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="UY6-vC-7Tj">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enzo-splash" translatesAutoresizingMaskIntoConstraints="NO" id="KVV-vY-s9W">
-                                <rect key="frame" x="144" y="373" width="313" height="227"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="227" id="D2D-MJ-2XE"/>
-                                    <constraint firstAttribute="width" constant="313" id="ujb-II-rd9"/>
-                                </constraints>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="96I-mO-rxS">
                                 <rect key="frame" x="184" y="235.5" width="233" height="29"/>
                                 <constraints>
@@ -34,17 +27,24 @@
                                     <constraint firstAttribute="width" constant="233" id="dKu-N2-NjS"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle-large-1" translatesAutoresizingMaskIntoConstraints="NO" id="kIA-f3-WOt">
+                                <rect key="frame" x="169" y="315" width="263" height="255"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="255" id="Pll-q1-MXK"/>
+                                    <constraint firstAttribute="width" constant="263" id="egM-n6-SHa"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vxG-lY-3N7" firstAttribute="top" secondItem="KVV-vY-s9W" secondAttribute="bottom" id="366-Wk-RI7"/>
                             <constraint firstAttribute="trailing" secondItem="UY6-vC-7Tj" secondAttribute="trailing" id="Svl-55-d8f"/>
+                            <constraint firstItem="vxG-lY-3N7" firstAttribute="top" secondItem="kIA-f3-WOt" secondAttribute="bottom" constant="30" id="XF8-5W-UVc"/>
                             <constraint firstItem="vxG-lY-3N7" firstAttribute="top" secondItem="UY6-vC-7Tj" secondAttribute="bottom" id="Y8f-GB-UZS"/>
                             <constraint firstItem="96I-mO-rxS" firstAttribute="centerX" secondItem="mmH-11-cEx" secondAttribute="centerX" id="elW-7F-gBJ"/>
                             <constraint firstItem="UY6-vC-7Tj" firstAttribute="top" secondItem="mmH-11-cEx" secondAttribute="top" id="mxw-TF-0VS"/>
                             <constraint firstItem="UY6-vC-7Tj" firstAttribute="leading" secondItem="mmH-11-cEx" secondAttribute="leading" id="r60-VP-l1t"/>
                             <constraint firstItem="96I-mO-rxS" firstAttribute="centerY" secondItem="mmH-11-cEx" secondAttribute="centerY" constant="-50" id="tuy-RJ-PTg"/>
-                            <constraint firstItem="KVV-vY-s9W" firstAttribute="centerX" secondItem="mmH-11-cEx" secondAttribute="centerX" id="xn4-3K-LV0"/>
+                            <constraint firstItem="kIA-f3-WOt" firstAttribute="centerX" secondItem="mmH-11-cEx" secondAttribute="centerX" id="w1O-Qm-qVf"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -55,7 +55,7 @@
     </scenes>
     <resources>
         <image name="background" width="375" height="667"/>
-        <image name="enzo-splash" width="313" height="227"/>
+        <image name="circle-large-1" width="250" height="242"/>
         <image name="logo" width="233" height="29"/>
     </resources>
 </document>
