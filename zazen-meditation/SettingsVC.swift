@@ -40,9 +40,7 @@ class SettingsVC: ViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func viewDidAppear(animated: Bool) {
+        
         setBellSelection(Meditation.instance.bellType)
         setupBells()
         

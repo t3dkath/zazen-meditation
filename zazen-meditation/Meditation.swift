@@ -23,6 +23,8 @@ class Meditation {
     var objectType: Int!
     var bellType: Int!
     
+    var closingZendo = false
+    
     init() {
         if !userDefaults.boolForKey("defaultsSaved") {
             leadinTime = 20

@@ -24,9 +24,15 @@ class HomeVC: ViewController {
         super.viewDidLoad()
         
         self.navigationController?.navigationBarHidden = true
+        
+        setupBells()
     }
     
     override func viewDidAppear(animated: Bool) {
+        if Meditation.instance.closingZendo {
+            bells2.play()
+            Meditation.instance.closingZendo = false
+        }
         zbtnZazen1TimeLbl.text = Meditation.instance.zazen1Time.timeString
         kbtnZazen2TimeLbl.text = Meditation.instance.zazen1Time.timeString
         kbtnKinhinTimeLbl.text = Meditation.instance.kinhinTime.timeString
@@ -34,6 +40,7 @@ class HomeVC: ViewController {
         
         let labels = [zbtnZazen1Lbl, zbtnZazen1TimeLbl, kbtnZazen2Lbl, kbtnZazen2TimeLbl, kbtnKinhinLbl, kbtnKinhinTimeLbl, kbtnZazen3Lbl, kbtnZazen3TimeLbl]
         addPageLetterSpacing(labels)
+        
         
     }
 

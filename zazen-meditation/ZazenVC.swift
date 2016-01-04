@@ -34,8 +34,8 @@ class ZazenVC: ViewController {
     }
     
     @IBAction func onCloseZendoPressed(sender: AnyObject) {
+        Meditation.instance.closingZendo = true
         bells1.stop()
-        bells2.play()
         UIApplication.sharedApplication().idleTimerDisabled = false
         self.navigationController?.popToRootViewControllerAnimated(true)
     }
