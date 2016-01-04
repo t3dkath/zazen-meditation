@@ -21,7 +21,7 @@ class Meditation {
     var zazen2Time: Int!
     
     var objectType: Int!
-    var bellType = "Large"
+    var bellType: Int!
     
     init() {
         if !userDefaults.boolForKey("defaultsSaved") {
@@ -34,6 +34,9 @@ class Meditation {
         } else {
             getTimesFromUserDefaults()
         }
+        
+        bellType = userDefaults.integerForKey("Bell")
+        saveBell()
     }
     
     private func setTimesToUserDefaults() {
@@ -62,5 +65,11 @@ class Meditation {
         
         userDefaults.setInteger(time, forKey: key)
         userDefaults.synchronize()
+    }
+    
+    func saveBell() {
+        userDefaults.setInteger(bellType, forKey: "Bell")
+        
+        
     }
 }

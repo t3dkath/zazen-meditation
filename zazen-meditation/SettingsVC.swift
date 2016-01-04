@@ -42,6 +42,7 @@ class SettingsVC: ViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setBellSelection(Meditation.instance.bellType)
         setupBells()
         
         timePicker.delegate = self
@@ -68,16 +69,9 @@ class SettingsVC: ViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     @IBAction func onChangeBell(sender: UIButton) {
-        switch(sender.tag) {
-        case 0 :
-            Meditation.instance.bellType = "Large"
-            bellLargeStick.alpha = 1
-            bellSmallStick.alpha = 0
-        default :
-            Meditation.instance.bellType = "Small"
-            bellLargeStick.alpha = 0
-            bellSmallStick.alpha = 1
-        }
+        setBellSelection(sender.tag)
+        
+        Meditation.instance.saveBell()
         
         setupBells()
         bells1.stop()
@@ -133,6 +127,20 @@ class SettingsVC: ViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         infoBtn.hidden = false
     }
     
+    
+    
+    func setBellSelection(bellSelection: Int) {
+        switch(bellSelection) {
+            case 0 :
+                Meditation.instance.bellType = 0
+                bellLargeStick.alpha = 1
+                bellSmallStick.alpha = 0
+            default :
+                Meditation.instance.bellType = 1
+                bellLargeStick.alpha = 0
+                bellSmallStick.alpha = 1
+        }
+    }
     
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
