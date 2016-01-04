@@ -19,8 +19,15 @@ class AboutVC: ViewController {
     @IBAction func closeAboutBtn(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
-    @IBAction func donateBtn(sender: AnyObject) {
-        
+    
+    @IBAction func wwwLinkPressed(sender: AnyObject) {
+        let wwwLink = "http://www.belfastzen.com"
+        UIApplication.sharedApplication().openURL(NSURL(string: wwwLink)!)
+    }
+    
+    @IBAction func donateBtnPressed(sender: AnyObject) {
+        let donateLink = "http://www.belfastzen.com"
+        UIApplication.sharedApplication().openURL(NSURL(string: donateLink)!)
     }
 
 }
