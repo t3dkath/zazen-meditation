@@ -231,7 +231,7 @@
                                 </constraints>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ib-uz-Msl">
-                                <rect key="frame" x="30" y="109" width="540" height="303"/>
+                                <rect key="frame" x="30" y="109" width="540" height="360"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GX5-HB-QVk">
                                         <rect key="frame" x="0.0" y="0.0" width="540" height="246"/>
@@ -275,19 +275,8 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                                     <constraint firstAttribute="bottom" secondItem="GX5-HB-QVk" secondAttribute="bottom" id="zU9-3p-fry"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwh-uS-ucj" userLabel="Donate">
-                                <rect key="frame" x="266" y="503" width="67" height="67"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="67" id="7w9-Y1-noU"/>
-                                    <constraint firstAttribute="height" constant="67" id="hO6-ac-FtP"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="donate"/>
-                                <connections>
-                                    <action selector="donateBtnPressed:" destination="03I-Xs-8Mb" eventType="touchUpInside" id="tYy-qG-VAO"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3by-B9-ISt" customClass="MainButton" customModule="zazen_meditation" customModuleProvider="target">
-                                <rect key="frame" x="202" y="437" width="196" height="46"/>
+                                <rect key="frame" x="202" y="494" width="196" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="196" id="cY4-qg-qTJ"/>
                                     <constraint firstAttribute="height" constant="46" id="g8I-fp-cAv"/>
@@ -326,13 +315,11 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                             <constraint firstAttribute="trailing" secondItem="bJ9-2S-HaE" secondAttribute="trailing" id="fuF-Ge-FHM"/>
                             <constraint firstItem="bJ9-2S-HaE" firstAttribute="leading" secondItem="dAj-DT-QVJ" secondAttribute="leading" id="hOE-6I-jAc"/>
                             <constraint firstItem="3by-B9-ISt" firstAttribute="centerX" secondItem="dAj-DT-QVJ" secondAttribute="centerX" id="iGY-WQ-8dl"/>
-                            <constraint firstItem="vwh-uS-ucj" firstAttribute="centerX" secondItem="dAj-DT-QVJ" secondAttribute="centerX" id="knK-fC-ftm"/>
+                            <constraint firstItem="BbK-hK-rCe" firstAttribute="top" secondItem="3by-B9-ISt" secondAttribute="bottom" constant="60" id="lMf-0u-0uf"/>
                             <constraint firstItem="3HX-cm-PLy" firstAttribute="top" secondItem="AAa-vz-IY8" secondAttribute="bottom" constant="30" id="nq3-zn-hzk"/>
                             <constraint firstAttribute="trailing" secondItem="EAu-9t-zMp" secondAttribute="trailing" constant="10" id="poQ-oN-AKn"/>
                             <constraint firstItem="9Ib-uz-Msl" firstAttribute="top" secondItem="3HX-cm-PLy" secondAttribute="bottom" constant="30" id="rTP-of-ncb"/>
-                            <constraint firstItem="vwh-uS-ucj" firstAttribute="top" secondItem="3by-B9-ISt" secondAttribute="bottom" constant="20" id="tYa-bp-s11"/>
                             <constraint firstItem="BbK-hK-rCe" firstAttribute="top" secondItem="bJ9-2S-HaE" secondAttribute="bottom" id="ucd-Gs-yP8"/>
-                            <constraint firstItem="BbK-hK-rCe" firstAttribute="top" secondItem="vwh-uS-ucj" secondAttribute="bottom" constant="30" id="zqs-Pk-sdz"/>
                         </constraints>
                     </view>
                     <connections>
@@ -390,8 +377,8 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                                     <action selector="onBeginPressed:" destination="3Qt-AU-i2K" eventType="touchUpInside" id="SqS-Ug-JdZ"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" axis="vertical" distribution="equalSpacing" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="rgj-Le-52V">
-                                <rect key="frame" x="200" y="155" width="200" height="348"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" axis="vertical" distribution="equalSpacing" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="rgj-Le-52V">
+                                <rect key="frame" x="200" y="126" width="200" height="348"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lxs-EW-ayz">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="78"/>
@@ -456,10 +443,10 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                                                             <color key="titleColor" red="0.0078431372550000003" green="0.0078431372550000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="timerLabelPressed:" destination="3Qt-AU-i2K" eventType="touchUpInside" id="23o-Lc-gVi"/>
+                                                            <action selector="timerLabelPressed:" destination="3Qt-AU-i2K" eventType="touchUpInside" id="Z6T-LJ-j8t"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="1 MINUTE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="vcz-XF-Arl">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="20 SECONDS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="vcz-XF-Arl">
                                                         <rect key="frame" x="0.0" y="20" width="200" height="30"/>
                                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="9"/>
                                                         <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -752,7 +739,6 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
         <image name="circle-large-1" width="250" height="242"/>
         <image name="circle-large-2" width="253" height="254"/>
         <image name="close" width="25" height="25"/>
-        <image name="donate" width="67" height="67"/>
         <image name="enzo-splash" width="313" height="227"/>
         <image name="info" width="25" height="25"/>
         <image name="logo" width="233" height="29"/>

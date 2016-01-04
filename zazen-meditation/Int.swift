@@ -23,6 +23,17 @@ extension Int {
     var inSeconds: Int {
         return self * 59
     }
+    var inSecondsDisplay: String {
+        var secString: String
+        
+        if self == 1 {
+            secString = "Second"
+        } else {
+            secString = "Seconds"
+        }
+        
+        return "\(self) \(secString)"
+    }
     
     var inMinutes: String {
         return ((self / 60) + 1).timeString

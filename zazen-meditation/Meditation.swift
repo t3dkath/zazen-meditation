@@ -15,7 +15,7 @@ class Meditation {
     let TIME_KEY = "times"
     let userDefaults = NSUserDefaults.standardUserDefaults()
     
-    var leadInTime: Int!
+    var leadinTime: Int!
     var zazen1Time: Int!
     var kinhinTime: Int!
     var zazen2Time: Int!
@@ -25,7 +25,7 @@ class Meditation {
     
     init() {
         if !userDefaults.boolForKey("defaultsSaved") {
-            leadInTime = 1
+            leadinTime = 20
             zazen1Time = 20
             kinhinTime = 10
             zazen2Time = 30
@@ -38,7 +38,7 @@ class Meditation {
     
     private func setTimesToUserDefaults() {
         userDefaults.setBool(true, forKey: "defaultsSaved")
-        userDefaults.setInteger(leadInTime, forKey: "leadInTime")
+        userDefaults.setInteger(leadinTime, forKey: "leadinTime")
         userDefaults.setInteger(zazen1Time, forKey: "zazen1Time")
         userDefaults.setInteger(kinhinTime, forKey: "kinhinTime")
         userDefaults.setInteger(zazen2Time, forKey: "zazen2Time")
@@ -46,7 +46,7 @@ class Meditation {
         userDefaults.synchronize()
     }
     private func getTimesFromUserDefaults() {
-        leadInTime = userDefaults.integerForKey("leadInTime")
+        leadinTime = userDefaults.integerForKey("leadinTime")
         zazen1Time = userDefaults.integerForKey("zazen1Time")
         kinhinTime = userDefaults.integerForKey("kinhinTime")
         zazen2Time = userDefaults.integerForKey("zazen2Time")
@@ -54,7 +54,7 @@ class Meditation {
     
     func saveTime(time: Int, key: String) {
         switch(key) {
-            case "leadInTime": leadInTime = time
+            case "leadinTime": leadinTime = time
             case "zazen1Time": zazen1Time = time
             case "kinhinTime": kinhinTime = time
             default: zazen2Time = time

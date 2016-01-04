@@ -35,7 +35,7 @@ class SettingsVC: ViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     let minutes = Array(1...60)
     
     var selectedLabel: UILabel!
-    var selectedKey: String!
+    var selectedKey = "leadinTime"
     var selectedTime: Int!
     
     
@@ -58,7 +58,7 @@ class SettingsVC: ViewController, UIPickerViewDelegate, UIPickerViewDataSource {
             zazen2TimeLbl.alpha = ALPHA_VALUE
         }
 
-        leadinTimeLbl.text = Meditation.instance.leadInTime.timeString
+        leadinTimeLbl.text = Meditation.instance.leadinTime.inSecondsDisplay
         zazen1TimeLbl.text = Meditation.instance.zazen1Time.timeString
         kinhinTimeLbl.text = Meditation.instance.kinhinTime.timeString
         zazen2TimeLbl.text = Meditation.instance.zazen2Time.timeString
@@ -95,8 +95,8 @@ class SettingsVC: ViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         switch(sender.tag) {
             case 0 :
                 selectedLabel = leadinTimeLbl
-                selectedKey = "leadInTime"
-                selectedTime = Meditation.instance.leadInTime
+                selectedKey = "leadinTime"
+                selectedTime = Meditation.instance.leadinTime
             case 1 :
                 selectedLabel = zazen1TimeLbl
                 selectedKey = "zazen1Time"
@@ -144,7 +144,11 @@ class SettingsVC: ViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return String(minutes[row].timeString)
+        if selectedKey == "leadinTime" {
+            return String(minutes[row].inSecondsDisplay)
+        } else {
+            return String(minutes[row].timeString)
+        }
     }
     
     func pickerView(pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
@@ -154,7 +158,13 @@ class SettingsVC: ViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         Meditation.instance.saveTime(minutes[row], key: selectedKey)
         
-        selectedLabel.text = String(minutes[row].timeString)
+        if selectedKey == "leadinTime" {
+            selectedLabel.text = String(minutes[row].inSecondsDisplay)
+        } else {
+            selectedLabel.text = String(minutes[row].timeString)
+        }
+        
+        
         addPageLetterSpacing(labels!)
     }
 }

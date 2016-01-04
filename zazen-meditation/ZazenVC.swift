@@ -24,9 +24,10 @@ class ZazenVC: ViewController {
 
         UIApplication.sharedApplication().idleTimerDisabled = true
         
-        count = Meditation.instance.leadInTime.inSeconds
+        count = Meditation.instance.leadinTime
         updateLabels()
         playTimer()
+        setupBells()
         
         let labels = [activityLbl, timerLbl]
         addPageLetterSpacing(labels)
@@ -98,7 +99,11 @@ class ZazenVC: ViewController {
         } else {
             activityLbl.text = currentObject
         }
-        timerLbl.text = String(count.inMinutes)
+        if currentObject == "Preparation" {
+            timerLbl.text = String(count.inSecondsDisplay)
+        } else {
+            timerLbl.text = String(count.inMinutes)
+        }
         
         addPageLetterSpacing([timerLbl, activityLbl])
     }
