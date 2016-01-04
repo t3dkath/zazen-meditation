@@ -16,6 +16,7 @@
 		FB0324B41C39556000D760E5 /* Meditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0324B31C39556000D760E5 /* Meditation.swift */; };
 		FB0324B61C3958FC00D760E5 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0324B51C3958FC00D760E5 /* Int.swift */; };
 		FB0324B81C39A1E500D760E5 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB0324B71C39A1E500D760E5 /* btn.wav */; };
+		FB2F135A1C3A74EE008D6951 /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2F13591C3A74EE008D6951 /* TimePicker.swift */; };
 		FBF87FC61C38286100632D9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF87FC51C38286100632D9E /* AppDelegate.swift */; };
 		FBF87FC81C38286100632D9E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF87FC71C38286100632D9E /* HomeVC.swift */; };
 		FBF87FCB1C38286100632D9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF87FC91C38286100632D9E /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		FB0324B31C39556000D760E5 /* Meditation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meditation.swift; sourceTree = "<group>"; };
 		FB0324B51C3958FC00D760E5 /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		FB0324B71C39A1E500D760E5 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = btn.wav; path = ../btn.wav; sourceTree = "<group>"; };
+		FB2F13591C3A74EE008D6951 /* TimePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePicker.swift; sourceTree = "<group>"; };
 		FBF87FC21C38286100632D9E /* zazen-meditation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "zazen-meditation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF87FC51C38286100632D9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBF87FC71C38286100632D9E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				FB0324A61C38815500D760E5 /* SettingsVC.swift */,
 				FB0324AA1C3888C400D760E5 /* ZazenVC.swift */,
 				FB0324A81C38817600D760E5 /* ViewController.swift */,
+				FB2F13591C3A74EE008D6951 /* TimePicker.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				FBF87FC81C38286100632D9E /* HomeVC.swift in Sources */,
 				FBF87FC61C38286100632D9E /* AppDelegate.swift in Sources */,
 				FB0324AF1C3935F500D760E5 /* MainButton.swift in Sources */,
+				FB2F135A1C3A74EE008D6951 /* TimePicker.swift in Sources */,
 				FB0324AD1C3927FC00D760E5 /* AboutVC.swift in Sources */,
 				FB0324A91C38817600D760E5 /* ViewController.swift in Sources */,
 				FB0324B61C3958FC00D760E5 /* Int.swift in Sources */,

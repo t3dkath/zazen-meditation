@@ -16,10 +16,25 @@ class ZazenVC: ViewController {
     var currentObject: String = "Preparation"
     var timerSeconds: Int!
     
-    var bellURL: NSURL {
+    var bells3URL: NSURL {
         return NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("btn", ofType: "wav")!)
     }
-    var bellSound = AVAudioPlayer()
+    var bells3 = AVAudioPlayer()
+    
+    var bells2URL: NSURL {
+        return NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("btn", ofType: "wav")!)
+    }
+    var bells2 = AVAudioPlayer()
+    
+    var bells1URL: NSURL {
+        return NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("btn", ofType: "wav")!)
+    }
+    var bells1 = AVAudioPlayer()
+    
+    var closeZendoBellURL: NSURL {
+        return NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("btn", ofType: "wav")!)
+    }
+    var closeZendoBell = AVAudioPlayer()
     
     @IBOutlet weak var closeZendo: UIButton!
     @IBOutlet weak var activityLbl: UILabel!
@@ -31,6 +46,7 @@ class ZazenVC: ViewController {
         UIApplication.sharedApplication().idleTimerDisabled = true
         
         count = Meditation.instance.leadInTime.inSeconds
+        updateLabels()
         setupBells()
         playTimer()
         
@@ -39,6 +55,7 @@ class ZazenVC: ViewController {
     }
     
     @IBAction func onCloseZendoPressed(sender: AnyObject) {
+        closeZendoBell.play()
         UIApplication.sharedApplication().idleTimerDisabled = false
         self.navigationController?.popToRootViewControllerAnimated(true)
     }
@@ -51,9 +68,7 @@ class ZazenVC: ViewController {
     func onTimerEnd() {
         switch(currentObject) {
         case "Preparation":
-            //play 3 bells
-            bellSound.play()
-            
+            bells3.play()
             currentObject = "Zazen1"
             count = Meditation.instance.zazen1Time.inSeconds
         case "Zazen1":
@@ -61,16 +76,12 @@ class ZazenVC: ViewController {
                 finished = true
                 finishMeditation()
             } else {
-                //play 3 bells
-                bellSound.play()
-                
+                bells3.play()
                 currentObject = "Kinhin"
                 count = Meditation.instance.kinhinTime.inSeconds
             }
         case "Kinhin":
-            //play 2 bells
-            bellSound.play()
-            
+            bells2.play()
             currentObject = "Zazen2"
             count = Meditation.instance.zazen2Time.inSeconds
         default:
@@ -85,7 +96,7 @@ class ZazenVC: ViewController {
     }
     
     func finishMeditation() {
-        //bell 1 bell
+        bells1.play()
         activityLbl.hidden = true
         timerLbl.hidden = true
         closeZendo.hidden = false
@@ -94,7 +105,6 @@ class ZazenVC: ViewController {
     }
     
     func timerTick() {
-        //print(count)
         updateLabels()
         if count > 0 {
             count = count - 1
@@ -117,8 +127,29 @@ class ZazenVC: ViewController {
     
     func setupBells() {
         do {
-            try bellSound = AVAudioPlayer(contentsOfURL: bellURL)
-            bellSound.prepareToPlay()
+            try bells3 = AVAudioPlayer(contentsOfURL: bells3URL)
+            bells3.prepareToPlay()
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+        
+        do {
+            try bells2 = AVAudioPlayer(contentsOfURL: bells2URL)
+            bells2.prepareToPlay()
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+        
+        do {
+            try bells1 = AVAudioPlayer(contentsOfURL: bells1URL)
+            bells1.prepareToPlay()
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+        
+        do {
+            try closeZendoBell = AVAudioPlayer(contentsOfURL: closeZendoBellURL)
+            closeZendoBell.prepareToPlay()
         } catch let err as NSError {
             print(err.debugDescription)
         }

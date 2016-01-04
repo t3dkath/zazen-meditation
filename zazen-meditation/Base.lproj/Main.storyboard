@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--HomeVC-->
@@ -33,7 +34,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZAZEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcn-Nn-Dgt">
                                                         <rect key="frame" x="0.0" y="0.0" width="130" height="23"/>
                                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 MINUTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahT-wa-STg">
@@ -76,7 +77,7 @@
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZAZEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNP-91-b6e">
                                                                 <rect key="frame" x="0.0" y="0.0" width="130" height="21"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 MINUTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aV-tu-PaP">
@@ -93,7 +94,7 @@
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KINHIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9q-HJ-bvC">
                                                                 <rect key="frame" x="0.0" y="0.0" width="130" height="21"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 MINUTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oG-tB-wOM">
@@ -110,7 +111,7 @@
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZAZEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMA-h0-miS">
                                                                 <rect key="frame" x="0.0" y="0.0" width="130" height="21"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 MINUTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGV-Ag-Rza">
@@ -154,13 +155,13 @@
                                     <constraint firstAttribute="height" constant="29" id="wdF-R7-GXV"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZrR-ZL-hJO" userLabel="infoBtn">
-                                <rect key="frame" x="555" y="555" width="25" height="25"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZrR-ZL-hJO" userLabel="infoBtn">
+                                <rect key="frame" x="545" y="545" width="45" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="NRT-Oy-lWW"/>
-                                    <constraint firstAttribute="width" constant="25" id="V7a-Cp-0Cp"/>
+                                    <constraint firstAttribute="height" constant="45" id="NRT-Oy-lWW"/>
+                                    <constraint firstAttribute="width" constant="45" id="V7a-Cp-0Cp"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="info"/>
+                                <state key="normal" image="info"/>
                                 <connections>
                                     <action selector="showAboutPage" destination="BYZ-38-t0r" eventType="touchUpInside" id="bLf-nr-QCJ"/>
                                     <segue destination="03I-Xs-8Mb" kind="presentation" identifier="AboutSegue" modalTransitionStyle="flipHorizontal" id="sbE-1U-96R"/>
@@ -171,14 +172,14 @@
                         <constraints>
                             <constraint firstItem="tK4-6i-PQZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ETQ-hJ-HYt"/>
                             <constraint firstItem="lTn-gq-sWC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FuD-5O-auC"/>
-                            <constraint firstAttribute="trailing" secondItem="ZrR-ZL-hJO" secondAttribute="trailing" constant="20" id="Hlg-ia-c0M"/>
+                            <constraint firstAttribute="trailing" secondItem="ZrR-ZL-hJO" secondAttribute="trailing" constant="10" id="Hlg-ia-c0M"/>
                             <constraint firstItem="tK4-6i-PQZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JKa-zy-1tZ"/>
                             <constraint firstItem="nFB-EI-yRe" firstAttribute="top" secondItem="lTn-gq-sWC" secondAttribute="bottom" constant="30" id="MSl-IY-jhs"/>
                             <constraint firstItem="lTn-gq-sWC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="Opu-Aw-vLV"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nFB-EI-yRe" secondAttribute="bottom" constant="25" id="Ud9-D7-qJr"/>
                             <constraint firstItem="lTn-gq-sWC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="VWf-Vx-sZG"/>
                             <constraint firstItem="nFB-EI-yRe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XJc-YF-EgY"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZrR-ZL-hJO" secondAttribute="bottom" constant="20" id="YUv-g7-9fr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZrR-ZL-hJO" secondAttribute="bottom" constant="10" id="YUv-g7-9fr"/>
                             <constraint firstItem="nFB-EI-yRe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="mlu-dE-UfT"/>
                             <constraint firstAttribute="trailing" secondItem="tK4-6i-PQZ" secondAttribute="trailing" id="rXc-Sp-CiV"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tK4-6i-PQZ" secondAttribute="bottom" id="tjX-1M-SJe"/>
@@ -238,18 +239,18 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Founded by a group of experienced Zen practitioners, Belfast Zen is a practice place for all." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMV-r9-ZMr">
                                                 <rect key="frame" x="0.0" y="0.0" width="540" height="39"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWy-Th-8TP">
                                                 <rect key="frame" x="0.0" y="59" width="540" height="187"/>
-                                                <mutableString key="text">Our aim is to create a welcoming environment for people new to Zen meditation practice. We are also committed to the ongoing development of a strong stable sangha (community) for those who are seasoned practitioners.
+                                                <string key="text">Our aim is to create a welcoming environment for people new to Zen meditation practice. We are also committed to the ongoing development of a strong stable sangha (community) for those who are seasoned practitioners.
 
 Old and new sitting together.
 
 We have a programme of events throughout the year. We invite teachers and practitioners from other Sanghas to come and share their practice with us. This can take a variety of forms from formal teaching to dharma talks, ceremonies and readings etc...
 
-Our Zendo is a place for everyone regardless of race, class, gender, sexual orientation, age or physical ability. </mutableString>
+Our Zendo is a place for everyone regardless of race, class, gender, sexual orientation, age or physical ability. </string>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
                                                 <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -296,14 +297,13 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                                     <color key="titleColor" red="0.0078431372550000003" green="0.0078431372550000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAu-9t-zMp" userLabel="infoBtn">
-                                <rect key="frame" x="555" y="555" width="25" height="25"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAu-9t-zMp" userLabel="infoBtn">
+                                <rect key="frame" x="545" y="545" width="45" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="6TS-1h-Tab"/>
-                                    <constraint firstAttribute="height" constant="25" id="gbd-Dp-bEz"/>
+                                    <constraint firstAttribute="width" constant="45" id="6TS-1h-Tab"/>
+                                    <constraint firstAttribute="height" constant="45" id="gbd-Dp-bEz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
-                                <state key="normal" backgroundImage="close">
+                                <state key="normal" image="close">
                                     <color key="titleColor" red="0.0078431372550000003" green="0.0078431372550000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -316,7 +316,7 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                             <constraint firstItem="3HX-cm-PLy" firstAttribute="centerX" secondItem="dAj-DT-QVJ" secondAttribute="centerX" id="1TB-UR-v7N"/>
                             <constraint firstItem="9Ib-uz-Msl" firstAttribute="leading" secondItem="dAj-DT-QVJ" secondAttribute="leading" constant="30" id="7Ny-1G-WaB"/>
                             <constraint firstItem="3by-B9-ISt" firstAttribute="top" secondItem="9Ib-uz-Msl" secondAttribute="bottom" constant="25" id="8kf-e0-t3K"/>
-                            <constraint firstItem="BbK-hK-rCe" firstAttribute="top" secondItem="EAu-9t-zMp" secondAttribute="bottom" constant="20" id="IWy-dh-z87"/>
+                            <constraint firstItem="BbK-hK-rCe" firstAttribute="top" secondItem="EAu-9t-zMp" secondAttribute="bottom" constant="10" id="IWy-dh-z87"/>
                             <constraint firstItem="GX5-HB-QVk" firstAttribute="width" secondItem="dAj-DT-QVJ" secondAttribute="width" constant="-60" id="Kjc-QT-lS7"/>
                             <constraint firstItem="bJ9-2S-HaE" firstAttribute="top" secondItem="dAj-DT-QVJ" secondAttribute="top" id="TLc-EE-gSu"/>
                             <constraint firstAttribute="trailing" secondItem="9Ib-uz-Msl" secondAttribute="trailing" constant="30" id="fCk-YJ-fj5"/>
@@ -325,7 +325,7 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                             <constraint firstItem="3by-B9-ISt" firstAttribute="centerX" secondItem="dAj-DT-QVJ" secondAttribute="centerX" id="iGY-WQ-8dl"/>
                             <constraint firstItem="vwh-uS-ucj" firstAttribute="centerX" secondItem="dAj-DT-QVJ" secondAttribute="centerX" id="knK-fC-ftm"/>
                             <constraint firstItem="3HX-cm-PLy" firstAttribute="top" secondItem="AAa-vz-IY8" secondAttribute="bottom" constant="30" id="nq3-zn-hzk"/>
-                            <constraint firstAttribute="trailing" secondItem="EAu-9t-zMp" secondAttribute="trailing" constant="20" id="poQ-oN-AKn"/>
+                            <constraint firstAttribute="trailing" secondItem="EAu-9t-zMp" secondAttribute="trailing" constant="10" id="poQ-oN-AKn"/>
                             <constraint firstItem="9Ib-uz-Msl" firstAttribute="top" secondItem="3HX-cm-PLy" secondAttribute="bottom" constant="30" id="rTP-of-ncb"/>
                             <constraint firstItem="vwh-uS-ucj" firstAttribute="top" secondItem="3by-B9-ISt" secondAttribute="bottom" constant="20" id="tYa-bp-s11"/>
                             <constraint firstItem="BbK-hK-rCe" firstAttribute="top" secondItem="bJ9-2S-HaE" secondAttribute="bottom" id="ucd-Gs-yP8"/>
@@ -362,13 +362,13 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                                     <constraint firstAttribute="width" constant="233" id="pKY-EC-Zhq"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2k-fq-kqX" userLabel="infoBtn">
-                                <rect key="frame" x="555" y="555" width="25" height="25"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2k-fq-kqX" userLabel="infoBtn">
+                                <rect key="frame" x="545" y="545" width="45" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="YLY-MT-gXl"/>
-                                    <constraint firstAttribute="width" constant="25" id="hFp-rs-M3T"/>
+                                    <constraint firstAttribute="height" constant="45" id="YLY-MT-gXl"/>
+                                    <constraint firstAttribute="width" constant="45" id="hFp-rs-M3T"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="info"/>
+                                <state key="normal" image="info"/>
                                 <connections>
                                     <action selector="showAboutPage" destination="3Qt-AU-i2K" eventType="touchUpInside" id="ekV-mx-HYA"/>
                                 </connections>
@@ -387,20 +387,27 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                                     <action selector="onBeginPressed:" destination="3Qt-AU-i2K" eventType="touchUpInside" id="SqS-Ug-JdZ"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" axis="vertical" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="rgj-Le-52V">
-                                <rect key="frame" x="200" y="170" width="200" height="263"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" axis="vertical" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="rgj-Le-52V">
+                                <rect key="frame" x="200" y="155" width="200" height="290"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="c3w-zz-0mc">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="35"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-15" translatesAutoresizingMaskIntoConstraints="NO" id="c3w-zz-0mc">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PREPARATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gi-hp-KqM">
-                                                <rect key="frame" x="0.0" y="0.0" width="200" height="23"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTx-VW-dDA">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="cWy-fs-vq1"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <state key="normal" title="PREPARATION">
+                                                    <color key="titleColor" red="0.0078431372550000003" green="0.0078431372550000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="timerLabelPressed:" destination="3Qt-AU-i2K" eventType="touchUpInside" id="23o-Lc-gVi"/>
+                                                </connections>
+                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="1 MINUTE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="vcz-XF-Arl">
-                                                <rect key="frame" x="0.0" y="23" width="200" height="12"/>
+                                                <rect key="frame" x="0.0" y="20" width="200" height="30"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="9"/>
                                                 <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -409,6 +416,7 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="T0Z-Fs-XcV"/>
                                             <constraint firstAttribute="width" constant="200" id="cQY-nV-0jB"/>
+                                            <constraint firstAttribute="height" constant="50" id="fzD-nV-Ioh"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -416,78 +424,121 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                                             </mask>
                                         </variation>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NP8-Sw-vBc">
-                                        <rect key="frame" x="0.0" y="75" width="200" height="36"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-15" translatesAutoresizingMaskIntoConstraints="NO" id="NP8-Sw-vBc">
+                                        <rect key="frame" x="0.0" y="80" width="200" height="50"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZAZEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5G-L1-t4N">
-                                                <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93e-Hn-hdR" userLabel="ZAZEN">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="7qq-8h-6nm"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <state key="normal" title="ZAZEN">
+                                                    <color key="titleColor" red="0.0078431372550000003" green="0.0078431372550000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="timerLabelPressed:" destination="3Qt-AU-i2K" eventType="touchUpInside" id="NXf-V6-YaI"/>
+                                                </connections>
+                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="20 MINUTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="7J6-Js-Fdj">
-                                                <rect key="frame" x="0.0" y="24" width="200" height="12"/>
+                                                <rect key="frame" x="0.0" y="20" width="200" height="30"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="9"/>
                                                 <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="C6j-w0-6fV"/>
+                                            <constraint firstAttribute="height" constant="50" id="C6j-w0-6fV"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NFL-7w-xTw">
-                                        <rect key="frame" x="0.0" y="151" width="200" height="36"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-15" translatesAutoresizingMaskIntoConstraints="NO" id="NFL-7w-xTw">
+                                        <rect key="frame" x="0.0" y="160" width="200" height="50"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="KINHIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AI0-oU-7za">
-                                                <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bh-sp-bm2" userLabel="KINHIN">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="9ct-Qf-hj0"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <state key="normal" title="KINHIN">
+                                                    <color key="titleColor" red="0.0078431372550000003" green="0.0078431372550000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="timerLabelPressed:" destination="3Qt-AU-i2K" eventType="touchUpInside" id="hNS-IH-Pzy"/>
+                                                </connections>
+                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 MINUTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="xAj-HP-PRB">
-                                                <rect key="frame" x="0.0" y="24" width="200" height="12"/>
+                                                <rect key="frame" x="0.0" y="20" width="200" height="30"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="9"/>
                                                 <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="60p-S7-53I"/>
+                                            <constraint firstAttribute="height" constant="50" id="60p-S7-53I"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rH4-yH-G3p">
-                                        <rect key="frame" x="0.0" y="227" width="200" height="36"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-15" translatesAutoresizingMaskIntoConstraints="NO" id="rH4-yH-G3p">
+                                        <rect key="frame" x="0.0" y="240" width="200" height="50"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="ZAZEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNv-fM-Nlr">
-                                                <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9F-9x-8ty" userLabel="ZAZEN">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="tRa-Bv-W07"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <state key="normal" title="ZAZEN">
+                                                    <color key="titleColor" red="0.0078431372550000003" green="0.0078431372550000003" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="timerLabelPressed:" destination="3Qt-AU-i2K" eventType="touchUpInside" id="20N-TZ-Wnu"/>
+                                                </connections>
+                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 MINUTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="sEM-IO-CKZ">
-                                                <rect key="frame" x="0.0" y="24" width="200" height="12"/>
+                                                <rect key="frame" x="0.0" y="20" width="200" height="30"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="9"/>
                                                 <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="VcF-AF-dS9"/>
+                                            <constraint firstAttribute="height" constant="50" id="VcF-AF-dS9"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hKI-No-dvU">
+                                <rect key="frame" x="0.0" y="440" width="600" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="NYu-Jv-5a5"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Slm-qg-Gzo">
+                                <rect key="frame" x="10" y="450" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="ill-mX-90d"/>
+                                    <constraint firstAttribute="height" constant="45" id="oMh-LY-hm4"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="closeTimePicker" destination="3Qt-AU-i2K" eventType="touchUpInside" id="pNv-nJ-gGz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="C7U-6d-hJD" firstAttribute="leading" secondItem="XFN-HY-fx9" secondAttribute="leading" id="1lH-LO-6Ao"/>
-                            <constraint firstItem="aXt-FL-nkc" firstAttribute="top" secondItem="x2k-fq-kqX" secondAttribute="bottom" constant="20" id="1oQ-oV-EMw"/>
-                            <constraint firstAttribute="trailing" secondItem="x2k-fq-kqX" secondAttribute="trailing" constant="20" id="2K7-IU-FWp"/>
+                            <constraint firstItem="aXt-FL-nkc" firstAttribute="top" secondItem="x2k-fq-kqX" secondAttribute="bottom" constant="10" id="1oQ-oV-EMw"/>
+                            <constraint firstAttribute="trailing" secondItem="x2k-fq-kqX" secondAttribute="trailing" constant="10" id="2K7-IU-FWp"/>
+                            <constraint firstItem="Slm-qg-Gzo" firstAttribute="leading" secondItem="XFN-HY-fx9" secondAttribute="leadingMargin" constant="-10" id="7Og-th-QLX"/>
                             <constraint firstItem="Mca-YJ-n25" firstAttribute="centerX" secondItem="XFN-HY-fx9" secondAttribute="centerX" id="9Iu-3a-Kqp"/>
                             <constraint firstItem="C7U-6d-hJD" firstAttribute="top" secondItem="XFN-HY-fx9" secondAttribute="top" id="BQE-2T-aNJ"/>
+                            <constraint firstItem="hKI-No-dvU" firstAttribute="leading" secondItem="XFN-HY-fx9" secondAttribute="leading" id="C7I-Nr-QCn"/>
                             <constraint firstItem="9me-5M-ELA" firstAttribute="centerX" secondItem="XFN-HY-fx9" secondAttribute="centerX" id="DaD-qy-wfg"/>
+                            <constraint firstItem="hKI-No-dvU" firstAttribute="top" secondItem="Slm-qg-Gzo" secondAttribute="bottom" constant="-55" id="F9d-MH-Db7"/>
+                            <constraint firstItem="aXt-FL-nkc" firstAttribute="top" secondItem="hKI-No-dvU" secondAttribute="bottom" id="HBc-3D-3F8"/>
                             <constraint firstItem="9me-5M-ELA" firstAttribute="top" secondItem="izT-Wp-I1i" secondAttribute="bottom" constant="30" id="OvA-39-01z"/>
+                            <constraint firstAttribute="trailing" secondItem="hKI-No-dvU" secondAttribute="trailing" id="QN6-Es-lfM"/>
                             <constraint firstItem="rgj-Le-52V" firstAttribute="centerY" secondItem="XFN-HY-fx9" secondAttribute="centerY" id="QVy-vF-Lmz"/>
                             <constraint firstItem="aXt-FL-nkc" firstAttribute="top" secondItem="Mca-YJ-n25" secondAttribute="bottom" constant="30" id="bWq-ni-65a"/>
                             <constraint firstAttribute="trailing" secondItem="C7U-6d-hJD" secondAttribute="trailing" id="cAA-tP-Rgq"/>
@@ -496,13 +547,18 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="kinhinLbl" destination="AI0-oU-7za" id="Ehh-qh-apu"/>
+                        <outlet property="beginBtn" destination="Mca-YJ-n25" id="GB0-hh-EM2"/>
+                        <outlet property="infoBtn" destination="x2k-fq-kqX" id="E3w-en-wP7"/>
+                        <outlet property="kinhinLbl" destination="0bh-sp-bm2" id="CsR-TZ-m3Z"/>
                         <outlet property="kinhinTimeLbl" destination="xAj-HP-PRB" id="geH-Fu-w0v"/>
-                        <outlet property="leadinLbl" destination="0gi-hp-KqM" id="MFl-Yi-4ui"/>
+                        <outlet property="labelsStack" destination="rgj-Le-52V" id="GlT-Xd-eeO"/>
+                        <outlet property="leadinLbl" destination="lTx-VW-dDA" id="rma-ob-UX3"/>
                         <outlet property="leadinTimeLbl" destination="vcz-XF-Arl" id="47o-DH-yk7"/>
-                        <outlet property="zazen1Lbl" destination="d5G-L1-t4N" id="4xI-gX-lrD"/>
+                        <outlet property="timePicker" destination="hKI-No-dvU" id="5hO-2O-3hG"/>
+                        <outlet property="timePickerBtn" destination="Slm-qg-Gzo" id="bKY-oT-ZB3"/>
+                        <outlet property="zazen1Lbl" destination="93e-Hn-hdR" id="KIg-iC-2oX"/>
                         <outlet property="zazen1TimeLbl" destination="7J6-Js-Fdj" id="OUz-hY-KPo"/>
-                        <outlet property="zazen2Lbl" destination="cNv-fM-Nlr" id="QrE-R1-KUq"/>
+                        <outlet property="zazen2Lbl" destination="z9F-9x-8ty" id="e6K-gf-kRJ"/>
                         <outlet property="zazen2TimeLbl" destination="sEM-IO-CKZ" id="wLf-q0-NSj"/>
                         <segue destination="EWH-cT-nlm" kind="show" identifier="ZazenSegue" id="AjD-rb-Wnb"/>
                         <segue destination="03I-Xs-8Mb" kind="presentation" identifier="AboutSegue" modalTransitionStyle="flipHorizontal" id="B71-UE-PIM"/>
@@ -534,13 +590,13 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                                     <constraint firstAttribute="height" constant="29" id="gE2-CT-Gcg"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdW-Fx-m7E" userLabel="infoBtn">
-                                <rect key="frame" x="555" y="555" width="25" height="25"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdW-Fx-m7E" userLabel="infoBtn">
+                                <rect key="frame" x="545" y="545" width="45" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="gsO-pU-c0L"/>
-                                    <constraint firstAttribute="width" constant="25" id="tTZ-LP-egY"/>
+                                    <constraint firstAttribute="height" constant="45" id="gsO-pU-c0L"/>
+                                    <constraint firstAttribute="width" constant="45" id="tTZ-LP-egY"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="info"/>
+                                <state key="normal" image="info"/>
                                 <connections>
                                     <action selector="showAboutPage" destination="EWH-cT-nlm" eventType="touchUpInside" id="rMN-St-brk"/>
                                 </connections>
@@ -551,7 +607,7 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PREPARATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vzp-BK-KoE">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="23"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="1 MINUTE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Mzt-ba-FPM">
@@ -595,14 +651,14 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                             <constraint firstItem="y9F-hm-0f8" firstAttribute="leading" secondItem="sKN-Xr-a11" secondAttribute="leading" id="GpZ-Xd-7ri"/>
                             <constraint firstItem="TeL-Cu-tVB" firstAttribute="top" secondItem="fj4-iW-HES" secondAttribute="bottom" constant="30" id="JeN-ba-3a3"/>
                             <constraint firstItem="Afu-fE-eW9" firstAttribute="centerY" secondItem="sKN-Xr-a11" secondAttribute="centerY" constant="-100" id="LL8-Lq-IiY"/>
-                            <constraint firstItem="p5w-LZ-7yg" firstAttribute="top" secondItem="HdW-Fx-m7E" secondAttribute="bottom" constant="20" id="MD9-JK-X7y"/>
+                            <constraint firstItem="p5w-LZ-7yg" firstAttribute="top" secondItem="HdW-Fx-m7E" secondAttribute="bottom" constant="10" id="MD9-JK-X7y"/>
                             <constraint firstItem="avv-SY-EZ4" firstAttribute="centerY" secondItem="sKN-Xr-a11" secondAttribute="centerY" constant="-100" id="UWj-LP-feQ"/>
                             <constraint firstItem="xeI-JO-zix" firstAttribute="centerX" secondItem="sKN-Xr-a11" secondAttribute="centerX" id="VRK-Jb-Gqs"/>
                             <constraint firstItem="p5w-LZ-7yg" firstAttribute="top" secondItem="y9F-hm-0f8" secondAttribute="bottom" id="WOY-w7-fMW"/>
                             <constraint firstAttribute="trailing" secondItem="y9F-hm-0f8" secondAttribute="trailing" id="aGB-Fl-lQK"/>
                             <constraint firstItem="TeL-Cu-tVB" firstAttribute="centerX" secondItem="sKN-Xr-a11" secondAttribute="centerX" id="aPI-dY-6N5"/>
                             <constraint firstItem="y9F-hm-0f8" firstAttribute="top" secondItem="sKN-Xr-a11" secondAttribute="top" id="lI7-CD-bNw"/>
-                            <constraint firstAttribute="trailing" secondItem="HdW-Fx-m7E" secondAttribute="trailing" constant="20" id="mid-ee-mBv"/>
+                            <constraint firstAttribute="trailing" secondItem="HdW-Fx-m7E" secondAttribute="trailing" constant="10" id="mid-ee-mBv"/>
                             <constraint firstItem="avv-SY-EZ4" firstAttribute="centerX" secondItem="sKN-Xr-a11" secondAttribute="centerX" id="r86-Di-EdU"/>
                         </constraints>
                     </view>
@@ -647,6 +703,6 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
         <image name="logo" width="233" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xL5-18-kLc"/>
+        <segue reference="B71-UE-PIM"/>
     </inferredMetricsTieBreakers>
 </document>

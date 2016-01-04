@@ -24,7 +24,7 @@ class Meditation {
     var objectType: Int!
     
     init() {
-        if (userDefaults.objectForKey(TIME_KEY) == nil) {
+        if !userDefaults.boolForKey("defaultsSaved") {
             leadInTime = 1
             zazen1Time = 20
             kinhinTime = 10
@@ -37,6 +37,7 @@ class Meditation {
     }
     
     private func setTimesToUserDefaults() {
+        userDefaults.setBool(true, forKey: "defaultsSaved")
         userDefaults.setInteger(leadInTime, forKey: "leadInTime")
         userDefaults.setInteger(zazen1Time, forKey: "zazen1Time")
         userDefaults.setInteger(kinhinTime, forKey: "kinhinTime")
@@ -49,5 +50,17 @@ class Meditation {
         zazen1Time = userDefaults.integerForKey("zazen1Time")
         kinhinTime = userDefaults.integerForKey("kinhinTime")
         zazen2Time = userDefaults.integerForKey("zazen2Time")
+    }
+    
+    func saveTime(time: Int, key: String) {
+        switch(key) {
+            case "leadInTime": leadInTime = time
+            case "zazen1Time": zazen1Time = time
+            case "kinhinTime": kinhinTime = time
+            default: zazen2Time = time
+        }
+        
+        userDefaults.setInteger(time, forKey: key)
+        userDefaults.synchronize()
     }
 }
