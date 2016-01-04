@@ -22,31 +22,31 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="tK4-6i-PQZ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" alignment="top" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="nFB-EI-yRe">
-                                <rect key="frame" x="189" y="109" width="200" height="422"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="nFB-EI-yRe">
+                                <rect key="frame" x="200" y="153" width="200" height="422"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zh-NE-WB0">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="194"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="193.5"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aIN-xx-Y5c">
-                                                <rect key="frame" x="40" y="90" width="130" height="35"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aIN-xx-Y5c">
+                                                <rect key="frame" x="40" y="79.5" width="130" height="34.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZAZEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcn-Nn-Dgt">
-                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="23"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 MINUTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahT-wa-STg">
-                                                        <rect key="frame" x="0.0" y="23" width="130" height="12"/>
+                                                        <rect key="frame" x="0.0" y="22.5" width="130" height="12"/>
                                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="9"/>
                                                         <color key="textColor" red="0.52941176470588236" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdN-pW-1HU">
-                                                <rect key="frame" x="0.0" y="0.0" width="222.5" height="215.5"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdN-pW-1HU">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="193.5"/>
                                                 <state key="normal" backgroundImage="circle-large-1"/>
                                                 <connections>
                                                     <action selector="goToSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xZx-h9-sZI"/>
@@ -66,22 +66,22 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="USm-f7-e0d">
-                                        <rect key="frame" x="0.0" y="229" width="200" height="194"/>
+                                        <rect key="frame" x="0.0" y="228.5" width="199.5" height="193.5"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9Fd-J1-C33">
-                                                <rect key="frame" x="40" y="52" width="130" height="109"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9Fd-J1-C33">
+                                                <rect key="frame" x="40" y="42.5" width="129.5" height="109"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pe7-hn-vOQ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="33"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="129.5" height="33"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZAZEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNP-91-b6e">
-                                                                <rect key="frame" x="0.0" y="0.0" width="130" height="21"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="129.5" height="21"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 MINUTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aV-tu-PaP">
-                                                                <rect key="frame" x="0.0" y="21" width="130" height="12"/>
+                                                                <rect key="frame" x="0.0" y="21" width="129.5" height="12"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="9"/>
                                                                 <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -89,16 +89,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OVV-bz-rma">
-                                                        <rect key="frame" x="0.0" y="38" width="130" height="33"/>
+                                                        <rect key="frame" x="0.0" y="38" width="129.5" height="33"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KINHIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9q-HJ-bvC">
-                                                                <rect key="frame" x="0.0" y="0.0" width="130" height="21"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="129.5" height="21"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 MINUTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oG-tB-wOM">
-                                                                <rect key="frame" x="0.0" y="21" width="130" height="12"/>
+                                                                <rect key="frame" x="0.0" y="21" width="129.5" height="12"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="9"/>
                                                                 <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -106,16 +106,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="txs-GB-rHg">
-                                                        <rect key="frame" x="0.0" y="76" width="130" height="33"/>
+                                                        <rect key="frame" x="0.0" y="76" width="129.5" height="33"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZAZEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMA-h0-miS">
-                                                                <rect key="frame" x="0.0" y="0.0" width="130" height="21"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="129.5" height="21"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 MINUTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGV-Ag-Rza">
-                                                                <rect key="frame" x="0.0" y="21" width="130" height="12"/>
+                                                                <rect key="frame" x="0.0" y="21" width="129.5" height="12"/>
                                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="9"/>
                                                                 <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -124,8 +124,8 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Dm-Cl-raZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="223" height="215.5"/>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Dm-Cl-raZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="199.5" height="193.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="3Dm-Cl-raZ" secondAttribute="height" multiplier="125:121" id="vvp-fS-eeA"/>
                                                 </constraints>
@@ -148,8 +148,8 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="lTn-gq-sWC">
-                                <rect key="frame" x="184" y="50" width="233" height="29"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="lTn-gq-sWC">
+                                <rect key="frame" x="184" y="94" width="233" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="233" id="ayI-eG-FaU"/>
                                     <constraint firstAttribute="height" constant="29" id="wdF-R7-GXV"/>
@@ -355,8 +355,8 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="C7U-6d-hJD">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="9me-5M-ELA">
-                                <rect key="frame" x="184" y="50" width="233" height="29"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="9me-5M-ELA">
+                                <rect key="frame" x="184" y="94" width="233" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="d9L-bN-Ig7"/>
                                     <constraint firstAttribute="width" constant="233" id="pKY-EC-Zhq"/>
@@ -583,8 +583,8 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="y9F-hm-0f8">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="TeL-Cu-tVB">
-                                <rect key="frame" x="184" y="50" width="233" height="29"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="TeL-Cu-tVB">
+                                <rect key="frame" x="184" y="94" width="233" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="233" id="M8c-Fk-CoT"/>
                                     <constraint firstAttribute="height" constant="29" id="gE2-CT-Gcg"/>
@@ -703,6 +703,6 @@ Our Zendo is a place for everyone regardless of race, class, gender, sexual orie
         <image name="logo" width="233" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="B71-UE-PIM"/>
+        <segue reference="sbE-1U-96R"/>
     </inferredMetricsTieBreakers>
 </document>
