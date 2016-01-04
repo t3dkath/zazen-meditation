@@ -56,12 +56,12 @@ class ZazenVC: ViewController {
                 finished = true
                 finishMeditation()
             } else {
-                bells3.play()
+                bells2.play()
                 currentObject = "Kinhin"
                 count = Meditation.instance.kinhinTime.inSeconds
             }
         case "Kinhin":
-            bells2.play()
+            bells3.play()
             currentObject = "Zazen2"
             count = Meditation.instance.zazen2Time.inSeconds
         default:

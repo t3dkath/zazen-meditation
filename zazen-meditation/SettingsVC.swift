@@ -38,10 +38,11 @@ class SettingsVC: ViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     var selectedKey = "leadinTime"
     var selectedTime: Int!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
         setBellSelection(Meditation.instance.bellType)
         setupBells()
         
