@@ -15,8 +15,12 @@
 		FB0324B11C39492D00D760E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB0324B01C39492D00D760E5 /* Assets.xcassets */; };
 		FB0324B41C39556000D760E5 /* Meditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0324B31C39556000D760E5 /* Meditation.swift */; };
 		FB0324B61C3958FC00D760E5 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0324B51C3958FC00D760E5 /* Int.swift */; };
-		FB0324B81C39A1E500D760E5 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB0324B71C39A1E500D760E5 /* btn.wav */; };
-		FB2F135A1C3A74EE008D6951 /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2F13591C3A74EE008D6951 /* TimePicker.swift */; };
+		FB30899E1C3B071C00F2CC8E /* 1 Bell.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB3089981C3B071C00F2CC8E /* 1 Bell.wav */; };
+		FB3089A01C3B071C00F2CC8E /* 2 Bells.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB30899A1C3B071C00F2CC8E /* 2 Bells.wav */; };
+		FB3089A21C3B071C00F2CC8E /* 3 Bells.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB30899C1C3B071C00F2CC8E /* 3 Bells.wav */; };
+		FB3089A61C3B083000F2CC8E /* 1 Bell sm.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB3089A31C3B083000F2CC8E /* 1 Bell sm.wav */; };
+		FB3089A71C3B083000F2CC8E /* 2 Bells sm.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB3089A41C3B083000F2CC8E /* 2 Bells sm.wav */; };
+		FB3089A81C3B083000F2CC8E /* 3 Bells sm.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB3089A51C3B083000F2CC8E /* 3 Bells sm.wav */; };
 		FBF87FC61C38286100632D9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF87FC51C38286100632D9E /* AppDelegate.swift */; };
 		FBF87FC81C38286100632D9E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF87FC71C38286100632D9E /* HomeVC.swift */; };
 		FBF87FCB1C38286100632D9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF87FC91C38286100632D9E /* Main.storyboard */; };
@@ -32,8 +36,12 @@
 		FB0324B01C39492D00D760E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB0324B31C39556000D760E5 /* Meditation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meditation.swift; sourceTree = "<group>"; };
 		FB0324B51C3958FC00D760E5 /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
-		FB0324B71C39A1E500D760E5 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = btn.wav; path = ../btn.wav; sourceTree = "<group>"; };
-		FB2F13591C3A74EE008D6951 /* TimePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePicker.swift; sourceTree = "<group>"; };
+		FB3089981C3B071C00F2CC8E /* 1 Bell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "1 Bell.wav"; sourceTree = "<group>"; };
+		FB30899A1C3B071C00F2CC8E /* 2 Bells.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "2 Bells.wav"; sourceTree = "<group>"; };
+		FB30899C1C3B071C00F2CC8E /* 3 Bells.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "3 Bells.wav"; sourceTree = "<group>"; };
+		FB3089A31C3B083000F2CC8E /* 1 Bell sm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "1 Bell sm.wav"; sourceTree = "<group>"; };
+		FB3089A41C3B083000F2CC8E /* 2 Bells sm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "2 Bells sm.wav"; sourceTree = "<group>"; };
+		FB3089A51C3B083000F2CC8E /* 3 Bells sm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "3 Bells sm.wav"; sourceTree = "<group>"; };
 		FBF87FC21C38286100632D9E /* zazen-meditation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "zazen-meditation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF87FC51C38286100632D9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBF87FC71C38286100632D9E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -61,7 +69,6 @@
 				FB0324A61C38815500D760E5 /* SettingsVC.swift */,
 				FB0324AA1C3888C400D760E5 /* ZazenVC.swift */,
 				FB0324A81C38817600D760E5 /* ViewController.swift */,
-				FB2F13591C3A74EE008D6951 /* TimePicker.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -88,7 +95,12 @@
 		FB0324B91C39A1EC00D760E5 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				FB0324B71C39A1E500D760E5 /* btn.wav */,
+				FB3089A31C3B083000F2CC8E /* 1 Bell sm.wav */,
+				FB3089A41C3B083000F2CC8E /* 2 Bells sm.wav */,
+				FB3089A51C3B083000F2CC8E /* 3 Bells sm.wav */,
+				FB3089981C3B071C00F2CC8E /* 1 Bell.wav */,
+				FB30899A1C3B071C00F2CC8E /* 2 Bells.wav */,
+				FB30899C1C3B071C00F2CC8E /* 3 Bells.wav */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -181,10 +193,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3089A21C3B071C00F2CC8E /* 3 Bells.wav in Resources */,
+				FB3089A61C3B083000F2CC8E /* 1 Bell sm.wav in Resources */,
 				FBF87FD01C38286100632D9E /* LaunchScreen.storyboard in Resources */,
 				FB0324B11C39492D00D760E5 /* Assets.xcassets in Resources */,
+				FB30899E1C3B071C00F2CC8E /* 1 Bell.wav in Resources */,
+				FB3089A01C3B071C00F2CC8E /* 2 Bells.wav in Resources */,
+				FB3089A71C3B083000F2CC8E /* 2 Bells sm.wav in Resources */,
+				FB3089A81C3B083000F2CC8E /* 3 Bells sm.wav in Resources */,
 				FBF87FCB1C38286100632D9E /* Main.storyboard in Resources */,
-				FB0324B81C39A1E500D760E5 /* btn.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +216,6 @@
 				FBF87FC81C38286100632D9E /* HomeVC.swift in Sources */,
 				FBF87FC61C38286100632D9E /* AppDelegate.swift in Sources */,
 				FB0324AF1C3935F500D760E5 /* MainButton.swift in Sources */,
-				FB2F135A1C3A74EE008D6951 /* TimePicker.swift in Sources */,
 				FB0324AD1C3927FC00D760E5 /* AboutVC.swift in Sources */,
 				FB0324A91C38817600D760E5 /* ViewController.swift in Sources */,
 				FB0324B61C3958FC00D760E5 /* Int.swift in Sources */,

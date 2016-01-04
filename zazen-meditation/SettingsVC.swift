@@ -25,6 +25,12 @@ class SettingsVC: ViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet weak var timePickerBtn: UIButton!
     @IBOutlet weak var beginBtn: UIButton!
     
+    @IBOutlet weak var bellLargeBtn: UIButton!
+    @IBOutlet weak var bellLargeStick: UIImageView!
+    @IBOutlet weak var bellSmallBtn: UIButton!
+    @IBOutlet weak var bellSmallStick: UIImageView!
+    
+    
     var labels: [UILabel]?
     let minutes = Array(1...60)
     
@@ -36,8 +42,12 @@ class SettingsVC: ViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupBells()
+        
         timePicker.delegate = self
         timePicker.dataSource = self
+        
+        timePicker.selectRow(0, inComponent: 0, animated: true)
         
         if Meditation.instance.objectType == objectType.ZAZEN.rawValue {
             kinhinLbl.alpha = ALPHA_VALUE
@@ -57,7 +67,27 @@ class SettingsVC: ViewController, UIPickerViewDelegate, UIPickerViewDataSource {
         addPageLetterSpacing(labels!)
     }
     
+    @IBAction func onChangeBell(sender: UIButton) {
+        switch(sender.tag) {
+        case 0 :
+            Meditation.instance.bellType = "Large"
+            bellLargeStick.alpha = 1
+            bellSmallStick.alpha = 0
+        default :
+            Meditation.instance.bellType = "Small"
+            bellLargeStick.alpha = 0
+            bellSmallStick.alpha = 1
+        }
+        
+        setupBells()
+        bells1.stop()
+        bells1.currentTime = 0
+        bells1.play()
+    }
+    
     @IBAction func onBeginPressed(sender: AnyObject) {
+        bells1.stop()
+        bells1.currentTime = 0
         performSegueWithIdentifier("ZazenSegue", sender: self)
     }
 
@@ -95,6 +125,7 @@ class SettingsVC: ViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     @IBAction func closeTimePicker() {
+        timePicker.selectRow(0, inComponent: 0, animated: true)
         labelsStack.alpha = 1
         timePicker.hidden = true
         timePickerBtn.hidden = true

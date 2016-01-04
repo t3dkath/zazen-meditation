@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import AVFoundation
 
 class ZazenVC: ViewController {
     
@@ -15,26 +14,6 @@ class ZazenVC: ViewController {
     var count: Int!
     var currentObject: String = "Preparation"
     var timerSeconds: Int!
-    
-    var bells3URL: NSURL {
-        return NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("btn", ofType: "wav")!)
-    }
-    var bells3 = AVAudioPlayer()
-    
-    var bells2URL: NSURL {
-        return NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("btn", ofType: "wav")!)
-    }
-    var bells2 = AVAudioPlayer()
-    
-    var bells1URL: NSURL {
-        return NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("btn", ofType: "wav")!)
-    }
-    var bells1 = AVAudioPlayer()
-    
-    var closeZendoBellURL: NSURL {
-        return NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("btn", ofType: "wav")!)
-    }
-    var closeZendoBell = AVAudioPlayer()
     
     @IBOutlet weak var closeZendo: UIButton!
     @IBOutlet weak var activityLbl: UILabel!
@@ -47,7 +26,6 @@ class ZazenVC: ViewController {
         
         count = Meditation.instance.leadInTime.inSeconds
         updateLabels()
-        setupBells()
         playTimer()
         
         let labels = [activityLbl, timerLbl]
@@ -55,7 +33,7 @@ class ZazenVC: ViewController {
     }
     
     @IBAction func onCloseZendoPressed(sender: AnyObject) {
-        closeZendoBell.play()
+        bells2.play()
         UIApplication.sharedApplication().idleTimerDisabled = false
         self.navigationController?.popToRootViewControllerAnimated(true)
     }
@@ -96,7 +74,7 @@ class ZazenVC: ViewController {
     }
     
     func finishMeditation() {
-        bells1.play()
+        bells3.play()
         activityLbl.hidden = true
         timerLbl.hidden = true
         closeZendo.hidden = false
@@ -125,33 +103,4 @@ class ZazenVC: ViewController {
         addPageLetterSpacing([timerLbl, activityLbl])
     }
     
-    func setupBells() {
-        do {
-            try bells3 = AVAudioPlayer(contentsOfURL: bells3URL)
-            bells3.prepareToPlay()
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
-        
-        do {
-            try bells2 = AVAudioPlayer(contentsOfURL: bells2URL)
-            bells2.prepareToPlay()
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
-        
-        do {
-            try bells1 = AVAudioPlayer(contentsOfURL: bells1URL)
-            bells1.prepareToPlay()
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
-        
-        do {
-            try closeZendoBell = AVAudioPlayer(contentsOfURL: closeZendoBellURL)
-            closeZendoBell.prepareToPlay()
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
-    }
 }

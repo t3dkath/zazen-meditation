@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -14,6 +15,14 @@ class ViewController: UIViewController {
         case ZAZEN = 0
         case KINHIN = 1
     }
+    
+    var bells1 = AVAudioPlayer()
+    var bells2 = AVAudioPlayer()
+    var bells3 = AVAudioPlayer()
+    
+    var bell1 = "1 Bell"
+    var bell2 = "2 Bells"
+    var bell3 = "3 Bells"
     
     var meditateTimer: NSTimer?
     let ALPHA_VALUE: CGFloat = 0.15
@@ -58,6 +67,46 @@ class ViewController: UIViewController {
                 self.navigationController?.popViewControllerAnimated(true)
             default: break
             }
+        }
+    }
+    
+    
+    
+    func setupBells() {
+        if Meditation.instance.bellType == "Large" {
+            bell1 = "1 Bell"
+            bell2 = "2 Bells"
+            bell3 = "3 Bells"
+        } else {
+            bell1 = "1 Bell sm"
+            bell2 = "2 Bells sm"
+            bell3 = "3 Bells sm"
+        }
+        
+        let bells1URL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource(bell1, ofType: "wav")!)
+        let bells2URL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource(bell2, ofType: "wav")!)
+        let bells3URL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource(bell3, ofType: "wav")!)
+        
+        
+        do {
+            try bells3 = AVAudioPlayer(contentsOfURL: bells3URL)
+            bells3.prepareToPlay()
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+        
+        do {
+            try bells2 = AVAudioPlayer(contentsOfURL: bells2URL)
+            bells2.prepareToPlay()
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+        
+        do {
+            try bells1 = AVAudioPlayer(contentsOfURL: bells1URL)
+            bells1.prepareToPlay()
+        } catch let err as NSError {
+            print(err.debugDescription)
         }
     }
 
