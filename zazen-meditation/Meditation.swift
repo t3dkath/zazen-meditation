@@ -12,7 +12,6 @@ class Meditation {
     
     static let instance = Meditation()
     
-    let TIME_KEY = "times"
     let userDefaults = NSUserDefaults.standardUserDefaults()
     
     var leadinTime: Int!
